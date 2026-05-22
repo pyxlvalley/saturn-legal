@@ -1,17 +1,320 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Saturn Bot - Legal</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn Bot — Terms & Privacy</title>
     <style>
-        body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        a { color: #0366d6; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0f1e 0%, #0c1222 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #e4e6eb;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #2a2f3f;
+            padding-bottom: 1.5rem;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #c5a3ff, #a0d9ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: #8b92a8;
+            font-size: 0.95rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1e2438;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #a0d9ff;
+            margin-top: 0.75rem;
+        }
+
+        .section {
+            background: rgba(18, 24, 38, 0.7);
+            backdrop-filter: blur(2px);
+            border-radius: 24px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #2a2f3f;
+            transition: all 0.2s ease;
+        }
+
+        .section:hover {
+            border-color: #3a4055;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: #d9e2ff;
+        }
+
+        .section h2 .emoji {
+            font-size: 1.6rem;
+        }
+
+        .section h3 {
+            font-size: 1.25rem;
+            margin: 1.2rem 0 0.6rem 0;
+            color: #b9c8ff;
+        }
+
+        .section p, .section li {
+            color: #cbd5e6;
+        }
+
+        .section ul, .section ol {
+            margin: 0.8rem 0 0.8rem 1.8rem;
+        }
+
+        .section li {
+            margin: 0.5rem 0;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.2rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #0f1322;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #2a2f3f;
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #1a1f32;
+            color: #b9c8ff;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #2a2f3f;
+            font-size: 0.8rem;
+            color: #5f6a84;
+        }
+
+        .footer a {
+            color: #8b9eff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .warning-note {
+            background: #1e1a2a;
+            border-left: 4px solid #ffb347;
+            padding: 1rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                padding: 1.2rem;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            th, td {
+                font-size: 0.8rem;
+                padding: 0.5rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>🪐 Saturn Bot</h1>
-    <p><a href="privacy.html">Privacy Policy</a></p>
-    <p><a href="terms.html">Terms of Service</a></p>
+<div class="container">
+    <div class="header">
+        <h1>🪐 Saturn</h1>
+        <p>Terms of Service + Privacy Policy</p>
+        <div class="badge">📅 Last updated: May 22, 2026</div>
+        <div class="badge" style="background:#2a1e2a;">👥 Friends-only bot</div>
+    </div>
+
+    <!-- ========== TERMS OF SERVICE ========== -->
+    <div class="section">
+        <h2><span class="emoji">⚖️</span> Terms of Service</h2>
+        <p><strong>By using Saturn, you agree to these terms.</strong> If you don't agree, don't use the bot.</p>
+
+        <h3>1. Use at Your Own Risk</h3>
+        <p>Saturn is provided "AS IS" for private, friend-only use. I make no guarantees about uptime, accuracy, or safety. You assume all risk.</p>
+
+        <h3>2. AI-Generated Content Warning</h3>
+        <p>Saturn's replies are generated by AI (Groq LLaMA) and may be:</p>
+        <ul>
+            <li>Incorrect, outdated, or misleading</li>
+            <li>Inappropriate, offensive, or unexpected (despite safety prompts)</li>
+            <li>Humorous, sarcastic, or intentionally opinionated (e.g., pineapple on pizza is a crime 🍕🚫)</li>
+        </ul>
+        <p><strong>Do not rely on Saturn for factual, legal, medical, or safety-critical advice.</strong></p>
+
+        <h3>3. Limitation of Liability</h3>
+        <p>To the maximum extent permitted by law, I am <strong>not liable</strong> for any damages, emotional distress, server issues, data loss, or harm caused by using Saturn.</p>
+
+        <h3>4. Prohibited Conduct</h3>
+        <p>You may not use Saturn for:</p>
+        <ul>
+            <li>Harassment, spam, or abuse</li>
+            <li>Generating illegal or harmful content</li>
+            <li>Attempting to crash, exploit, or reverse-engineer the bot</li>
+        </ul>
+
+        <h3>5. Termination</h3>
+        <p>I reserve the right to block any user at any time, with or without notice or reason.</p>
+
+        <h3>6. Changes to Terms</h3>
+        <p>These terms may be updated at any time. Continued use of Saturn after changes means you accept the new terms.</p>
+
+        <h3>7. Contact</h3>
+        <p>For questions or issues: <strong>@pyxlvalley</strong></p>
+    </div>
+
+    <!-- ========== PRIVACY POLICY ========== -->
+    <div class="section">
+        <h2><span class="emoji">🔒</span> Privacy Policy</h2>
+        <p>This explains what data Saturn collects and why. Since this is a <strong>friends-only bot</strong>, data handling is minimal.</p>
+
+        <h3>1. What Data Saturn Collects</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Examples</th>
+                        <th>Stored?</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Discord User ID</td>
+                        <td><code>123456789012345678</code> (example — not real)</td>
+                        <td>Yes (temporary)</td>
+                        <td>RAM (lost on restart)</td>
+                    </tr>
+                    <tr>
+                        <td>Auto-response toggle</td>
+                        <td><code>/torespond</code> preference</td>
+                        <td>Yes (until restart)</td>
+                        <td>RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Conversation history</td>
+                        <td>Last 10–20 messages you send to Saturn</td>
+                        <td>Yes (temporary)</td>
+                        <td>RAM (lost on restart)</td>
+                    </tr>
+                    <tr>
+                        <td>Cooldown timestamps</td>
+                        <td>When you last used the bot</td>
+                        <td>Yes (temporary)</td>
+                        <td>RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Message content</td>
+                        <td>Anything sent to @Saturn or via DM</td>
+                        <td>Processed, not logged</td>
+                        <td>Sent to AI APIs, then discarded</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><strong>Note:</strong> No message history is ever saved to disk. All data in RAM is lost whenever the bot restarts (typically every few days/weeks).</p>
+
+        <h3>2. How Your Data Is Used</h3>
+        <ul>
+            <li>Generate AI replies via <strong>Groq API</strong> (LLaMA 3.3 model)</li>
+            <li>Generate images via <strong>Stable Horde API</strong> (if you use <code>/generateimage</code>)</li>
+            <li>Remember your auto-response preference (<code>/torespond</code>)</li>
+            <li>Prevent spam (cooldown system)</li>
+        </ul>
+
+        <h3>3. Third-Party Services (Your Data is Sent Here)</h3>
+        <ul>
+            <li><strong>Groq Inc.</strong> (AI text generation) – <a href="https://groq.com/privacy-policy/" target="_blank" style="color:#8b9eff;">https://groq.com/privacy-policy/</a></li>
+            <li><strong>AI Horde / Stable Horde</strong> (image generation) – <a href="https://stablehorde.net/privacy" target="_blank" style="color:#8b9eff;">https://stablehorde.net/privacy</a></li>
+        </ul>
+        <p>Your Discord User ID may be included in API calls for debugging purposes. No full conversation history is shared — only the immediate prompt needed to generate a response.</p>
+
+        <h3>4. Data Retention</h3>
+        <ul>
+            <li><strong>RAM-based data</strong> (conversation history, toggles, cooldowns): Lost when Saturn restarts.</li>
+            <li><strong>No permanent storage</strong> – Saturn does not save messages or user data to disk except for basic runtime variables.</li>
+        </ul>
+
+        <h3>5. Your Rights (Access & Deletion)</h3>
+        <p>Because Saturn is a friends-only bot, just ask me directly:</p>
+        <ul>
+            <li><strong>What data is stored?</strong> – I can check the bot's current RAM state (conversation history, your toggle preference).</li>
+            <li><strong>Delete your data</strong> – I will restart the bot, which clears all RAM. Your User ID will no longer be in memory.</li>
+        </ul>
+        <p>To make a request, contact: <strong>@pyxlvalley</strong></p>
+
+        <h3>6. Security</h3>
+        <p>I take reasonable precautions, but no method of transmission or storage is 100% secure. Use Saturn at your own risk.</p>
+
+        <h3>7. Children's Privacy</h3>
+        <p><strong>You must be at least 13 years old to use Saturn.</strong> This matches Discord's own Terms of Service. If you are under 13, do not use Saturn.</p>
+        <p>Additionally, Saturn's AI provider (<strong>Groq</strong>) states that their services are not directed at children under 18, and they do not knowingly collect identifiable information from anyone under 18. By using Saturn, you confirm that you are at least 18 years old, or if you are between 13 and 17, you are using the bot with explicit permission from a parent/guardian who accepts these terms on your behalf.</p>
+        <p>If you believe a child under 13 has used Saturn, contact me immediately so I can clear any associated data.</p>
+
+        <h3>8. Changes to This Policy</h3>
+        <p>If this policy changes, this page will be updated. Continued use of Saturn means acceptance.</p>
+
+        <div class="warning-note">
+            ⚠️ <strong>Reminder</strong>: Saturn is an AI bot. Its responses are generated automatically and may be wrong, weird, or offensive. This is a friends-only bot — use responsibly and don't take everything seriously.
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🪐 Saturn Bot — Private, friends-only use</p>
+        <p>Contact: <strong>@pyxlvalley</strong> | Last updated: May 22, 2026</p>
+    </div>
+</div>
 </body>
 </html>
